@@ -1,11 +1,7 @@
 *** Settings ***
 Library         SeleniumLibrary
 Resource        ../Ressources/Keywords/Keywords.robot
-Variables       ../Ressources/Locators/Locators_ScenarioA.py
-Variables       ../Ressources/Locators/Locators_ScenarioB.py
-Variables       ../Ressources/Locators/Locators_ScenarioC.py
-Variables       ../Ressources/Locators/Locators_ScenarioD.py
-Variables       ../Ressources/Locators/Locators_ScenarioE.py
+
 
 
 *** Variables ***

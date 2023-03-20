@@ -2,11 +2,7 @@
 Library         SeleniumLibrary
 Library         DateTime
 Library    String
-Variables       ../Locators/Locators_ScenarioA.py
-Variables       ../Locators/Locators_ScenarioB.py
-Variables       ../Locators/Locators_ScenarioC.py
-Variables       ../Locators/Locators_ScenarioD.py
-Variables       ../Locators/Locators_ScenarioE.py
+
 
 
 *** Variables ***
