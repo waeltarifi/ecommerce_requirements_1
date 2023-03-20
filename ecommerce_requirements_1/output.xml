@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.7.9 on win32)" generated="20230319 23:15:29.624" rpa="false" schemaversion="3">
+<suite id="s1" name="Scripts" source="c:\Users\waelt\Desktop\Formation SQL\AUTOMATISATION DES TESTS II\ecommerce_requirements_1\Scripts\Scripts.robot">
+<test id="s1-t1" name="Exigence 7" line="40">
+<kw name="Acceder a la page" library="Keywords">
+<arg>${vURL}</arg>
+<arg>${vBrowser}</arg>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230319 23:15:30.130" endtime="20230319 23:15:30.131"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${vURL}</arg>
+<arg>${vBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230319 23:15:30.133" level="INFO">Opening browser 'chrome' to base url 'http://tutorialsninja.com/demo/index.php?route=common/home'.</msg>
+<status status="PASS" starttime="20230319 23:15:30.132" endtime="20230319 23:15:48.041"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230319 23:15:48.042" endtime="20230319 23:15:48.293"/>
+</kw>
+<status status="PASS" starttime="20230319 23:15:30.129" endtime="20230319 23:15:48.293"/>
+</kw>
+<kw name="Exigence 7" library="Keywords">
+<arg>samsungwww</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@name='search']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230319 23:15:48.299" endtime="20230319 23:15:48.320"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='search']</arg>
+<arg>${vProduitInexistant}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230319 23:15:48.322" level="INFO">Typing text 'samsungwww' into text field '//input[@name='search']'.</msg>
+<status status="PASS" starttime="20230319 23:15:48.321" endtime="20230319 23:15:48.457"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[@class='btn btn-default btn-lg']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230319 23:15:48.458" endtime="20230319 23:15:48.484"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='btn btn-default btn-lg']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230319 23:15:48.487" level="INFO">Clicking element '//button[@class='btn btn-default btn-lg']'.</msg>
+<status status="PASS" starttime="20230319 23:15:48.485" endtime="20230319 23:15:49.043"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//p[contains(text(),'There is no product that matches the search criter')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230319 23:15:49.045" endtime="20230319 23:15:49.108"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230319 23:15:49.109" endtime="20230319 23:15:51.468"/>
+</kw>
+<status status="PASS" starttime="20230319 23:15:48.297" endtime="20230319 23:15:51.469"/>
+</kw>
+<status status="PASS" starttime="20230319 23:15:30.127" endtime="20230319 23:15:51.472"/>
+</test>
+<status status="PASS" starttime="20230319 23:15:29.636" endtime="20230319 23:15:51.485"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Scripts">Scripts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
